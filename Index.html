@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margaret Ebong | AI/ML and NLP Portfolio</title>
+  <meta name="description" content="Portfolio of Margaret Ebong Christopher, Computer Engineering student building AI/ML and NLP solutions.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #0b6e4f;
+      --card: #f5f7fa;
+      --border: #d9e2ec;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #111827;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --accent: #34d399;
+        --card: #1f2937;
+        --border: #374151;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main { max-width: 780px; margin: 0 auto; padding: 48px 20px; }
+    header h1 { font-size: 2.2rem; margin: 0 0 8px; }
+    header p.tagline { color: var(--muted); margin: 0 0 16px; font-size: 1.1rem; }
+    nav a {
+      display: inline-block;
+      margin: 4px 12px 4px 0;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+    section { margin-top: 40px; }
+    h2 { font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .project h3 { margin: 0 0 6px; font-size: 1.15rem; }
+    .tools { color: var(--muted); font-size: 0.92rem; margin: 0 0 10px; }
+    .project a { color: var(--accent); font-weight: 600; }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Margaret Ebong Christopher</h1>
+      <p class="tagline">Computer Engineering student building AI/ML and NLP solutions, with a focus on problems relevant to African markets.</p>
+      <nav>
+        <a href="https://github.com/Gharet-18">GitHub</a>
+        <a href="https://www.linkedin.com/in/margaret-ebong-a49163352">LinkedIn</a>
+        <a href="https://x.com/MEbong29808">X</a>
+        <a href="mailto:margaretebong2007@gmail.com">Email</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Computer Engineering student at the University of Uyo, Akwa Ibom State, Nigeria.
+        I work across machine learning, natural language processing, and the frontend tools
+        needed to put models in front of real users (HTML, CSS, JavaScript, React, and Python).
+        I also share AI/ML learning content on GitHub, X, and LinkedIn.
+      </p>
+      <p>
+        I am looking for opportunities where I can apply AI/ML and NLP to real problems, including
+        internships, research, and collaborations.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>AdVerify: Scam Job Ad Checker</h3>
+        <p>A Streamlit app that helps users check whether job and "digital skills" ads seen on TikTok are likely scams. It combines a verification checklist, a text scan, and screenshot reading (OCR) with a TF-IDF and logistic regression model trained on the Kaggle fake job postings dataset.</p>
+        <p class="tools">Tools: Python, scikit-learn, TF-IDF, Logistic Regression, OCR, Streamlit, Streamlit Cloud</p>
+        <p><a href="https://github.com/gharet-18/Job-ad-classifier">View code</a> | <a href="https://job-ad-classifier-kxugnzql4lwi2cpayfttty.streamlit.app/">Live app</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Potato Blight Classifier (Group Project)</h3>
+        <p>A CNN classifier built with MobileNetV2 to distinguish early blight from late blight in potato leaf images. The model is deployed as a Streamlit app. I worked on this as part of a 10-member team.</p>
+        <p class="tools">Tools: Python, TensorFlow/Keras, MobileNetV2, transfer learning, Streamlit</p>
+        <p><a href="https://github.com/gharet-18/Potato-Early-Blight-vs-Late-Blight-Classifier-">View code</a></p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Contact: <a href="mailto:margaretebong2007@gmail.com">margaretebong2007@gmail.com</a> | Built with plain HTML and CSS.</p>
+    </footer>
+  </main>
+</body>
+</html>
